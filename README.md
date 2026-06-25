@@ -8,8 +8,8 @@ Apasionado por la seguridad defensiva, la criptografía aplicada y la automatiza
 ## 🛠️ Mi Stack Tecnológico
 
 *   **🔒 Ciberseguridad:** Thales CipherTrust, Luna HSM 7, payShield 10K, Hardening de Servidores, ISO 27001 & PCI DSS.
-*   **☁️ Cloud & DevOps:** Azure, AWS (Lambda, S3, API Gateway), Kubernetes, Jenkins y automatización con Bash.
-*   **🖥️ Infraestructura:** Linux (RHEL, CentOS), Windows Server, Oracle WebLogic y JBoss.
+*   **☁️ Cloud & DevOps:** Azure, AWS (Lambda, S3, API Gateway), Kubernetes, Jenkins y automatización con Bash/Python.
+*   **🖥️ Infraestructura:** Linux (RHEL, Oracle, Ubuntu), Windows Server, Oracle WebLogic y JBoss.
 
 ---
 
