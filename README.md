@@ -1,4 +1,4 @@
-# ¡Hola! Soy Juan David Rodríguez Gómez 👋
+# ¡Hola! Soy Juan David Rodríguez 👋
 ### **Especialista en Ciberseguridad & Infraestructura Crítica**
 
 Apasionado por la seguridad defensiva, la criptografía aplicada y la automatización de infraestructura. Me especializo en la implementación de soluciones robustas de cifrado y gestión de llaves en entornos corporativos de alta exigencia.
