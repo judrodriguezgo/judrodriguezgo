@@ -1,16 +1,34 @@
-## Hi there 👋
+# ¡Hola! Soy Juan David Rodríguez Gómez 👋
+### **Especialista en Ciberseguridad & Infraestructura Crítica**
 
-<!--
-**judrodriguezgo/judrodriguezgo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Apasionado por la seguridad defensiva, la criptografía aplicada y la automatización de infraestructura. Me especializo en la implementación de soluciones robustas de cifrado y gestión de llaves en entornos corporativos de alta exigencia.
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🛠️ Mi Stack Tecnológico
+
+*   **🔒 Ciberseguridad:** Thales CipherTrust, Luna HSM 7, payShield 10K, Hardening de Servidores, ISO 27001 & PCI DSS.
+*   **☁️ Cloud & DevOps:** Azure, AWS (Lambda, S3, API Gateway), Kubernetes, Jenkins y automatización con Bash.
+*   **🖥️ Infraestructura:** Linux (RHEL, CentOS), Windows Server, Oracle WebLogic y JBoss.
+
+---
+
+## 📜 Certificaciones Clave
+
+*   🎓 **Máster Universitario en Seguridad Informática** (UNIR)
+*   🛠️ **Thales payShield 10K & Luna 7** Core Engineer
+*   🔐 **Thales CipherTrust DSP** Professional Certified Engineer
+*   🛡️ **Certificado Profesional de Ciberseguridad** (Google)
+
+---
+
+## 📊 En qué estoy trabajando
+*   🛡️ Desplegando soluciones de Ciberseguridad como Servicio (CaaS) y arquitecturas de cifrado híbridas.
+*   🚀 Automatizando tareas operativas y flujos de despliegue para entornos críticos.
+
+---
+
+## 📫 Conectemos
+
+*   💼 [LinkedIn](https://linkedin.com/in/judrodriguezgo)
+*   📧 [judrodriguezgo@gmail.com](mailto:judrodriguezgo@gmail.com)
