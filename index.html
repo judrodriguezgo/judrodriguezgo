@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan David Rodríguez | Portafolio</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent-color: #38bdf8;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-color: #334155;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 0 40px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--text-main);
+            margin-bottom: 10px;
+        }
+
+        header h2 {
+            font-size: 1.3rem;
+            color: var(--accent-color);
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .contact-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+            border: 1px solid var(--border-color);
+            padding: 8px 16px;
+            border-radius: 20px;
+            background-color: rgba(30, 41, 59, 0.5);
+        }
+
+        .contact-links a:hover {
+            color: var(--accent-color);
+            border-color: var(--accent-color);
+        }
+
+        section {
+            padding: 40px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        section h3 {
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .profile-text {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-card {
+            background-color: var(--card-bg);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .skill-card h4 {
+            color: var(--text-main);
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            border-left: 3px solid var(--accent-color);
+            padding-left: 10px;
+        }
+
+        .skill-card ul {
+            list-style: none;
+        }
+
+        .skill-card ul li {
+            color: var(--text-muted);
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        .skill-card ul li::before {
+            content: "▪";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+        }
+
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .timeline-item {
+            background-color: var(--card-bg);
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            position: relative;
+        }
+
+        .timeline-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+            gap: 10px;
+        }
+
+        .timeline-title h4 {
+            font-size: 1.2rem;
+            color: var(--text-main);
+        }
+
+        .timeline-company {
+            color: var(--accent-color);
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        .timeline-date {
+            background-color: rgba(56, 189, 248, 0.1);
+            color: var(--accent-color);
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .timeline-desc {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            padding-left: 15px;
+        }
+
+        .timeline-desc li {
+            margin-bottom: 8px;
+        }
+
+        .certs-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            list-style: none;
+        }
+
+        .certs-list li {
+            background-color: rgba(30, 41, 59, 0.3);
+            border: 1px solid var(--border-color);
+            padding: 12px 20px;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .certs-list span.year {
+            color: var(--accent-color);
+            font-weight: 500;
+            font-size: 0.85rem;
+            background-color: rgba(56, 189, 248, 0.05);
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0 20px 0;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 2rem; }
+            .timeline-header { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Juan David Rodríguez Gómez</h1>
+            <h2>Especialista en Ciberseguridad & Infraestructura Crítica</h2>
+            <div class="contact-links">
+                <a href="mailto:judrodriguezgo@gmail.com">📧 judrodriguezgo@gmail.com</a>
+                <a href="https://linkedin.com/in/judrodriguezgo" target="_blank">💼 LinkedIn</a>
+            </div>
+        </header>
+
+        <section id="sobre-mi">
+            <h3>Sobre Mí</h3>
+            <p class="profile-text">
+                Máster en Ciberseguridad, Ingeniero de Sistemas y Técnico en Programación de Software con experiencia transversal en ciberseguridad, sistemas operativos, virtualización, entornos cloud, microservicios e infraestructura en general. Apasionado por la automatización, la eficiencia operativa y la implementación de soluciones robustas en entornos tecnológicos complejos de alta exigencia.
+            </p>
+        </section>
+
+        <section id="habilidades">
+            <h3>Habilidades Técnicas</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h4>🔒 Ciberseguridad & Criptografía</h4>
+                    <ul>
+                        <li>Thales CipherTrust Manager Suite</li>
+                        <li>Thales Luna Network HSM 7 & payShield 10K</li>
+                        <li>Hardening de Servidores y Middleware</li>
+                        <li>Estándares ISO 27001 & PCI DSS</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h4>☁️ Cloud & DevOps</h4>
+                    <ul>
+                        <li>Microsoft Azure & AWS (ec2, S3, API Gateway)</li>
+                        <li>Orquestación en Kubernetes</li>
+                        <li>Automatización CI/CD con Jenkins</li>
+                        <li>Desarrollo de scripts avanzados en Bash/Python</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h4>🖥️ Infraestructura & Middleware</h4>
+                    <ul>
+                        <li>Linux (RHEL, CentOS, Oracle Linux) & Windows Server</li>
+                        <li>Oracle WebLogic, JBoss, WebSphere, Tomcat, Nginx</li>
+                        <li>Bases de Datos: Oracle, SQL Server, MySQL, MariaDB</li>
+                        <li>Monitoreo y Respaldo (Zabbix, Nagios, PRTG)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiencia">
+            <h3>Experiencia Laboral</h3>
+            <div class="timeline">
+                
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div class="timeline-title">
+                            <h4>Especialista en Ciberseguridad</h4>
+                            <div class="timeline-company">American Smart Systems & Networks</div>
+                        </div>
+                        <span class="timeline-date">Abril 2024 - Presente</span>
+                    </div>
+                    <ul class="timeline-desc">
+                        <li>Implementación y soporte de soluciones de Ciberseguridad como servicio (CaaS) basadas en Thales CipherTrust.</li>
+                        <li>Soporte técnico especializado sobre plataformas HSM Thales (Luna Network HSM 7 y payShield 10K).</li>
+                        <li>Despliegue de recursos criptográficos avanzados en ambientes on-premise, virtuales y nube.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div class="timeline-title">
+                            <h4>Consultor Junior N2</h4>
+                            <div class="timeline-company">SETI S.A.S</div>
+                        </div>
+                        <span class="timeline-date">Junio 2023 - Marzo 2024</span>
+                    </div>
+                    <ul class="timeline-desc">
+                        <li>Administración de servidores de aplicaciones (Oracle WebLogic, IBM WebSphere) garantizando alta disponibilidad.</li>
+                        <li>Soporte en despliegues a producción mediante pipelines de automatización en Jenkins.</li>
+                        <li>Validación de microservicios en entornos Kubernetes e integración de arquitecturas híbridas con AWS.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div class="timeline-title">
+                            <h4>Analista de Servidores</h4>
+                            <div class="timeline-company">American Smart Systems & Networks</div>
+                        </div>
+                        <span class="timeline-date">Abril 2022 - Junio 2023</span>
+                    </div>
+                    <ul class="timeline-desc">
+                        <li>Administración y hardening de sistemas operativos empresariales (Windows Server, RHEL, CentOS, Oracle Linux).</li>
+                        <li>Automatización de procesos operativos mediante scripts Bash avanzados.</li>
+                        <li>Gestión y remediación de vulnerabilidades bajo estándares ISO 27001 y PCI DSS.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div class="timeline-title">
+                            <h4>Gestor de Tecnología Junior</h4>
+                            <div class="timeline-company">Heinsohn Business Technology</div>
+                        </div>
+                        <span class="timeline-date">Agosto 2020 - Abril 2022</span>
+                    </div>
+                    <ul class="timeline-desc">
+                        <li>Soporte a entornos productivos y de recuperación ante desastres (DRP) en nubes como Azure e IBM Bluemix.</li>
+                        <li>Instalación de certificados SSL y aplicación de hardening en servidores web (Nginx).</li>
+                        <li>Automatización de tareas complejas con scripts Bash y consultas Transact-SQL.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="certificaciones">
+            <h3>Certificaciones Destacadas</h3>
+            <ul class="certs-list">
+                <li><span>🎓 Máster Universitario en Seguridad Informática (UNIR)</span> <span class="year">2026</span></li>
+                <li><span>🔐 Thales payShield 10K Core Engineer</span> <span class="year">2026</span></li>
+                <li><span>🔐 Thales Luna 7 HSM Core Engineer</span> <span class="year">2026</span></li>
+                <li><span>🛡️ Certificado Profesional de Ciberseguridad de Google</span> <span class="year">2025</span></li>
+                <li><span>💼 Thales CipherTrust DSP Professional Certified Engineer</span> <span class="year">2024</span></li>
+                <li><span>☁️ Microsoft Azure Fundamentals Suite</span> <span class="year">2022</span></li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Juan David Rodríguez. Desarrollado para GitHub Pages.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
