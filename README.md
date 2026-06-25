@@ -15,7 +15,7 @@ Apasionado por la seguridad defensiva, la criptografía aplicada y la automatiza
 
 ## 📜 Certificaciones Clave
 
-*   🎓 **Máster Universitario en Seguridad Informática** (UNIR)
+*   🎓 **Máster Universitario en Ciberseguridad** (UNIR)
 *   🛠️ **Thales payShield 10K & Luna 7** Core Engineer
 *   🔐 **Thales CipherTrust DSP** Professional Certified Engineer
 *   🛡️ **Certificado Profesional de Ciberseguridad** (Google)
